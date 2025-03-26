@@ -1,0 +1,17 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("PG")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model TwatsToken {
+  id        String   @id @default(uuid())
+  name      String
+  secret    Bytes    @default(dbgenerated("gen_random_bytes(256)"))
+  // TODO: abac?
+  updatedAt DateTime @updatedAt
+  createdAt DateTime @default(now())
+}

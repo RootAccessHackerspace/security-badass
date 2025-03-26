@@ -3,14 +3,18 @@
 
 A web portal for Root Access Hackerspace's security system.
 
-Features will include arming/disarming the system, activity logging, and camera access via Wyze RTSP streams
+Features will include arming/disarming the system, activity logging, and camera access via Wyze HLS streams
 
 To run, simply clone and run
 
 ```
-npm install
+npm ci
+docker compose up
+```
 
-npm run dev
+once running, deploy the migrations
+```
+docker exec -it $(docker compose ps node --quiet) npx prisma migrate deploy
 ```
 
 And you should be good to go

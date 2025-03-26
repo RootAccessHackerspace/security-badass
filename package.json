@@ -4,7 +4,9 @@
 	"version": "0.0.1",
 	"type": "module",
 	"scripts": {
+		"predev": "prisma generate",
 		"dev": "vite dev",
+		"prebuild": "prisma generate",
 		"build": "vite build",
 		"preview": "vite preview",
 		"prepare": "svelte-kit sync || echo ''",
@@ -31,6 +33,7 @@
 		"prettier": "^3.4.2",
 		"prettier-plugin-svelte": "^3.3.3",
 		"prettier-plugin-tailwindcss": "^0.6.11",
+		"prisma": "^6.5.0",
 		"svelte": "^5.0.0",
 		"svelte-check": "^4.0.0",
 		"tailwindcss": "^4.0.0",
@@ -39,6 +42,7 @@
 		"vite": "^6.0.0"
 	},
 	"dependencies": {
-		"@lucide/svelte": "^0.483.0"
+		"@lucide/svelte": "^0.483.0",
+		"@prisma/client": "^6.5.0"
 	}
 }
