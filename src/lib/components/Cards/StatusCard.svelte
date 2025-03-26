@@ -6,11 +6,9 @@
     export let date: Date;
 </script>
 
-<FlexContainer>
-    <Container>
-        <FlexContainer>
-            <p>{message}</p>
-            <p>{date.toLocaleTimeString()}</p>
-        </FlexContainer>
-    </Container>
-</FlexContainer>
+<Container>
+    <FlexContainer>
+        <p>{message}</p>
+        <p>{date.toLocaleTimeString()}</p>
+    </FlexContainer>
+</Container>
