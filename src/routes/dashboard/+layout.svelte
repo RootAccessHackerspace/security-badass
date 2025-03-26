@@ -3,7 +3,6 @@
     import FlexContainer from '$lib/components/Containers/FlexContainer.svelte';
     import MenuOptionLink from '$lib/components/Links/MenuOptionLink.svelte';
 	import '../../app.css';
-    import './dashboard.css';
 
 	let { children } = $props();
 </script>
