@@ -4,19 +4,19 @@ export class HttpService {
     
     constructor() {}
 
-    public async get(url: string): Promise<Response> {
+    public async get(url: string, headers?: any): Promise<Response> {
         return fetch(url, {
             method: 'GET',
-            headers: {
+            headers: headers ?? {
                 'Content-Type': 'application/json'
             }
         });
     }
 
-    public async post(url: string, data: any): Promise<Response> {
+    public async post(url: string, data: any, headers?: any): Promise<Response> {
         return fetch(url, {
             method: 'POST',
-            headers: {
+            headers: headers ?? {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify(data)
