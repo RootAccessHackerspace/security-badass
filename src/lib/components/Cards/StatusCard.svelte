@@ -9,6 +9,6 @@
 <Container>
     <FlexContainer>
         <p>{message}</p>
-        <p>{date.toLocaleTimeString()}</p>
+        <p>{date.toLocaleString()}</p>
     </FlexContainer>
 </Container>
