@@ -5,7 +5,7 @@
 </script>
 
 <Container>
-    <Logo size={12} />
+    <Logo classes={"h-12 w-auto"} />
     <p class="text-2xl font-bold">Login</p>
     <div class="items-center justify-between p-4">
         <input type="text" class="input p-4 m-4" placeholder="Username" required/>

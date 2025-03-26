@@ -1,5 +1,5 @@
 <script lang="ts">
-    export let size: number = 12;
+    export let classes: string = "";
 </script>
 
-<img src="/rootaccess-logo-color.svg" alt="Root Access S.H.I.E.L.D" class={`h-${size} w-auto mb-16`} />
+<img src="/rootaccess-logo-color.svg" alt="Root Access S.H.I.E.L.D" class={classes} />

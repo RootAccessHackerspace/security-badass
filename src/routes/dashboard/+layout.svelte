@@ -1,7 +1,7 @@
 <script lang="ts">
     import Container from '$lib/components/Containers/Container.svelte';
     import FlexContainer from '$lib/components/Containers/FlexContainer.svelte';
-    import MenuOptionLink from '$lib/components/Links/MenuOptionLink.svelte';
+    import MenuOptionLink from '$lib/components/Links/MenuOptionLink/MenuOptionLink.svelte';
 	import Logo from '$lib/components/Logo.svelte';
 	import { Paths } from '$lib/consts/paths';
 	import '../../app.css';
@@ -23,7 +23,7 @@
         </FlexContainer>
         <FlexContainer> 
             <p class="mx-4">Powered by: </p>
-            <Logo size={8}/>
+            <Logo classes={"h-8 w-auto"} />
         </FlexContainer>
     </FlexContainer>
 </Container>
